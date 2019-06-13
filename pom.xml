@@ -153,13 +153,13 @@
     <repository>
     <id>releases</id>
     <name>Releases</name>
-    <url>http://3.14.7.32:8081:8081/nexus/content/repositories/releases</url>
+    <url>http://13.235.91.12:8081/nexus/content/repositories/releases</url>
     </repository>
 
     <snapshotRepository>
     <id>snapshots</id>
     <name>Snapshots</name>
-    <url>http://3.14.7.32:8081:8081/nexus/content/repositories/snapshots</url>
+    <url>http://13.235.91.12:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
 
   </distributionManagement>
