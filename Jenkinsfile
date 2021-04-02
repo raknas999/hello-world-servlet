@@ -7,7 +7,7 @@ stage('Preparation') {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/raknas999/hello-world-servlet.git'
+      git 'https://github.com/akhil-45/hello-world-servlet.git'
 
       // Get the Maven tool.
      
@@ -15,7 +15,7 @@ stage('Preparation') {
  
      // **       in the global configuration.   
         
-      mvnHome = tool 'Maven'
+      mvnHome = tool 'Maven-3.6.3'
    }
 
    stage('Build') {
