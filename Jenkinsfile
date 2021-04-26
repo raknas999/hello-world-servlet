@@ -15,7 +15,7 @@ stage('Preparation') {
  
      // **       in the global configuration.   
         
-      mvnHome = tool 'Maven'
+      mvnHome = tool 'maven'
    }
 
    stage('Build') {
