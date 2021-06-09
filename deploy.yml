@@ -24,8 +24,8 @@
       state: absent
     when: stat_result.stat.exists == True
   - name: Deploy War File
-    get_url:
-       url: http://52.14.159.180:8081/nexus/service/local/artifact/maven/redirect?r=releases&g=com.geekcap.vmturbo&a=hello-world-servlet-example&p=war&v=LATEST
+    get_url: 
+       url: http://3.143.223.167:8081/nexus/service/local/artifact/maven/redirect?r=releases&g=com.geekcap.vmturbo&a=hello-world-servlet-example&p=war&v=LATEST
        dest: /usr/share/tomcat/webapps/hello-world-servlet-example.war
   - name: Start Tomcat
     service: name=tomcat state=started

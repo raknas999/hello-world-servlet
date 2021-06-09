@@ -12,7 +12,7 @@ stages {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/raknas999/hello-world-servlet.git'
+      git 'https://github.com/pavankb2/hello-world-servlet.git'
 
       // Get the Maven tool.
      
@@ -59,7 +59,8 @@ stages {
      nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/helloworld.war']], mavenCoordinate: [artifactId: 'hello-world-servlet-example', groupId: 'com.geekcap.vmturbo', packaging: 'war', version: '$BUILD_NUMBER']]]
       }
  }
-     stage('Deploy War') {
+ master
+    stage('Deploy War')
       steps {
         sh label: '', script: 'ansible-playbook deploy.yml'
       }
