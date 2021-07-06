@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     tools { 
-        maven 'Maven' 
+        maven 'maven' 
       
     }
 stages { 
@@ -12,7 +12,7 @@ stages {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/raknas999/hello-world-servlet.git'
+      git 'https://github.com/bkarthik411/hello-world-servlet.git'
 
       // Get the Maven tool.
      
@@ -37,7 +37,7 @@ stages {
  
   stage('Results') {
       steps {
-      junit '**/target/surefire-reports/TEST-*.xml'
+      junit '**/target/surefire-reports/*.xml'
       archiveArtifacts 'target/*.war'
       }
  }
